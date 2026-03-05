@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout | Rosette</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="contanct.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <!-- Checkout Form -->
+        <div class="checkout-container">
+            <h2>Checkout</h2>
+
+            <form onsubmit="placeOrder(event)">
+                <input type="text" id="name" placeholder="Enter your Name" required>
+                <input type="email" id="email" placeholder="Enter your Email" required>
+                <input type="text" id="address" placeholder="Enter Your Address" required>
+
+                <div class="input-row">
+                    <input type="text" id="city" placeholder="City" required>
+                    <input type="text" id="zip" placeholder="Pincode" required>
+                </div>
+
+                <button type="submit" class="checkout-btn">Register</button>
+            </form>
+        </div>
+
+
+        <!-- Right Details Card -->
+        <div class="details-card">
+            <h3>My Details</h3>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-user"></i>
+                <span>Krisha Darji</span>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>9825063445</span>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>krisha@gmail.com</span>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-brands fa-instagram"></i>
+                <span>@rosette_2326</span>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function placeOrder(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const address = document.getElementById("address").value;
+            const city = document.getElementById("city").value;
+            const zip = document.getElementById("zip").value;
+
+            const userData = { name, email, address, city, zip };
+            localStorage.setItem("userData", JSON.stringify(userData));
+
+            const msg = document.createElement("div");
+            msg.textContent = "🎉 You are successfully registered!";
+            msg.className = "success-msg";
+            document.body.appendChild(msg);
+
+            setTimeout(() => {
+                msg.remove();
+                window.location.href = "home.html"; // Redirect after 2 seconds
+            }, 2000);
+        }
+    </script>
+</body>
+
+</html>

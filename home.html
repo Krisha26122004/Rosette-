@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Coquette Bloom</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        #scrollToTopBtn {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+
+            display: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: linear-gradient(135deg, #f1657a, #f8879a);
+            color: white;
+            font-size: 28px;
+
+            box-shadow: 0 8px 20px rgba(255, 182, 193, 0.4);
+            transition: all 0.3s ease;
+
+            animation: floatBtn 2.5s ease-in-out infinite;
+        }
+
+        #scrollToTopBtn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 12px 25px rgba(255, 182, 193, 0.6);
+        }
+
+        /* Floating Animation */
+        @keyframes floatBtn {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-6px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        #scrollToTopBtn .material-icons {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="scrollToTopBtn">⬆</button>
+
+    <div id="navbar">
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <h2>🌷Rosette</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Flowers</a></li>
+                <li><a href="#keychains">Keychains</a></li>
+                <li><a href="#All">All Items</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+                <li class="cart">🛒 <span id="cartCount">0</span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- HOME -->
+    <section id="home" class="section">
+        <div class="hero">
+            <div>
+                <h1>Soft Flowers, Sweet Feelings</h1>
+                <p>Handmade coquette crochet bouquets for gentle hearts 🌸</p>
+                <a href="#shop" class="btn">Shop Now</a>
+            </div>
+            <img src="flowerr.jpg">
+        </div>
+    </section>
+
+    <!-- SHOP -->
+    <section id="shop" class="section">
+        <h2 class="center">Our Coquette Bouquets</h2>
+
+        <div class="product-grid">
+            <div class="card">
+                <img src="flower1.jpg">
+                <h3>Ivory Tulip Bouquet</h3>
+                <p>₹399</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="flower2.jpg">
+                <h3>Sunny Crochet Bloom</h3>
+                <p>₹599</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="flowwer3.jpg">
+                <h3>Blue Lily Coquette</h3>
+                <p>₹375</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="flower4.jpg">
+                <h3>Rose Ribbon Wrap</h3>
+                <p>₹899</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+    <section id="keychains" class="section">
+        <h2 class="center">Our Keychains</h2>
+        <div class="product-grid">
+            <div class="card">
+                <img src="keychain.1.jpg">
+                <h3>Sunflower Brightness</h3>
+                <p>₹199</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="keychain.2.jpg">
+                <h3>Little Birdie keychain</h3>
+                <p>₹250</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="keychain.3.jpg">
+                <h3>Cherry Blossom</h3>
+                <p>₹200</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="keychain.4.jpg">
+                <h3>Blueberry Peep</h3>
+                <p>₹220</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="keychain.5.jpg">
+                <h3>Midnight Bow</h3>
+                <p>₹270</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="All" class="section">
+        <h2 class="center">ALL ITEMS</h2>
+        <div class="product-grid">
+            <div class="card">
+                <img src="Airpodes.jpg">
+                <h3>Berry Cozy Pods</h3>
+                <p>₹250</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="accesories.jpg">
+                <h3>MushRoom Jewles</h3>
+                <p>₹200</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="bag.jpg">
+                <h3>Lavender Lace Tote</h3>
+                <p>₹899</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="laptopcase.jpg">
+                <h3>Loom-Top Cover</h3>
+                <p>₹890</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="mirror.jpg">
+                <h3>Latte Lock Mirror</h3>
+                <p>₹8500</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="pillows.jpg">
+                <h3>Starry Snuggle </h3>
+                <p>₹1300</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="phonecase.jpg">
+                <h3>The Stitch Case</h3>
+                <p>₹4000</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="lipgloss.jpg">
+                <h3>Gloss Gaurd</h3>
+                <p>₹350</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="dreamcatcher.jpg">
+                <h3>Dream Catcher</h3>
+                <p>₹950</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="cutrain.jpg">
+                <h3>The Ivy Wrap</h3>
+                <p>₹690</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOGIN MODAL -->
+    <div id="login" class="modal">
+        <div class="modal-box">
+            <a href="#" class="close">×</a>
+            <h2>Customer Login</h2>
+
+            <form>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Rosette | Handmade with Love 🤍</p>
+    </footer>
+    <script>
+        let cartCount = 0;
+        const cartDisplay = document.getElementById("cartCount");
+
+        // Load cart from localStorage
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        cartCount = cart.length;
+        cartDisplay.textContent = cartCount;
+
+        const buttons = document.querySelectorAll(".card button");
+
+        buttons.forEach(button => {
+            button.addEventListener("click", () => {
+                const card = button.parentElement;
+                const name = card.querySelector("h3").textContent;
+                const price = card.querySelector("p").textContent.replace("₹", "");
+
+                // Save item
+                cart.push({ name, price });
+                localStorage.setItem("cart", JSON.stringify(cart));
+
+                cartCount++;
+                cartDisplay.textContent = cartCount;
+
+                button.textContent = "Added ✓";
+                button.disabled = true;
+
+                setTimeout(() => {
+                    button.textContent = "Add to cart";
+                    button.disabled = false;
+                }, 1000);
+            });
+        });
+
+        document.querySelector(".cart").addEventListener("click", () => {
+            window.location.href = "checkout.html";
+        });
+
+        const scrollBtn = document.getElementById("scrollToTopBtn");
+
+        window.addEventListener("scroll", () => {
+            if (document.documentElement.scrollTop > 300) {
+                scrollBtn.style.display = "flex";
+            } else {
+                scrollBtn.style.display = "none";
+            }
+        });
+
+        scrollBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>
