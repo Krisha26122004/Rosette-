@@ -5,16 +5,18 @@ The project focuses on clean UI design, modern layout structure, and mobile-firs
 
 🚀 About the Project
 
-Rosette is designed as a modern, visually appealing website layout suitable for businesses, portfolios, startups, or service-based companies.
+Rosette is a clean, elegant, and responsive website designed for businesses, consulting firms, startups, or portfolio presentation.
 
-The main objective of this project was to:
+This project demonstrates strong frontend fundamentals including:
 
-Practice advanced HTML structure
+Semantic HTML structure
 
-Implement responsive design using CSS
+Advanced CSS layouts (Flexbox & Grid)
 
-Apply Flexbox and Grid layouts
+Responsive design using Media Queries
 
-Build a professional UI without JavaScript
+JavaScript DOM manipulation
 
-Ensure cross-device compatibility
+Clean UI/UX principles
+
+Cross-device compatibility
